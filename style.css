@@ -1,0 +1,87 @@
+
+@import url('https://fonts.cdnfonts.com/css/super-mario-256');
+
+
+body {
+  font-family: 'Super Mario 256', 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ffcccc, #c6f7c3, #f9d5e5);
+  min-height: 100vh;
+  padding: 20px;
+  color: #333;
+  cursor: auto;
+}
+
+
+.form-label {
+  font-weight: 600;
+  color: #444;
+}
+
+.btn-mario, .btn-luigi, .btn-peach {
+  background-color: rgb(23, 23, 150);
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(40, 100, 200, 0.4);
+  padding: 10px 22px;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-shadow: none;
+}
+
+.btn-mario::before {
+  content: "🍄";
+}
+
+.btn-luigi::before {
+  content: "🍃";
+}
+
+.btn-peach::before {
+  content: "👑";
+}
+
+.btn-primary {
+  background-color: #1a3d8c; 
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #15346b;
+}
+
+.table {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  color: #444;
+}
+
+.table thead {
+  background: linear-gradient(90deg, #7dafff, #90bfff, #82aaff);
+  color: #3a3a3a;
+  font-weight: 700;
+  border-radius: 10px 10px 0 0;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-striped tbody tr:hover {
+  background-color: #dce9ff;
+  cursor: pointer;
+}
+
